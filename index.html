@@ -3,9 +3,61 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <title>Vending Machine App</title>
    </head>
    <body>
+      <div class="container text-center">
+         <div class="row mx-2 justify-content-center">
+            <div class="col-md-8 text-center">
+               <div class="row">
+                  <h2 class="text-center m-2">Vending Machine</h2>
+               </div>
+               <!-- Product Buttons -->
+               <div class="row">
+                  <button class="btn btn-warning m-1" onclick="vend(0)">
+                     $1.15 Cheetos
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(1)">
+                     $2.00 Popcorn
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(2)">
+                     $3.50 Fritos
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(3)">
+                     $1.00 Water Bottle
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(4)">
+                     $2.00 Sun Chips
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(5)">
+                     $4.00 Doritos
+                  </button>
+                  <button class="btn btn-warning m-1" onclick="vend(6)">
+                     $500.00 Gold Plated Banana
+                  </button>
+               </div>
+
+               <!-- Money Buttons -->
+               <div class="row">
+                  <button class="btn btn-success m-1" onclick="addMoney(1)">
+                     Insert $1
+                  </button>
+               </div>
+               <div class="row">
+                  <button class="btn btn-success m-1" onclick="addMoney(0.25)">
+                     Insert 25¢
+                  </button>
+               </div>
+
+               <!-- Cancel Button -->
+               <div class="row">
+                  <button class="btn btn-danger m-1" onclick="cancel()">Cancel</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <script src="scripts.js"></script>
    </body>
 </html>
